@@ -1,0 +1,16 @@
+body {
+      font-family: Verdana, sans-serif;
+  }
+
+nav {
+    background-color: #becbb4;
+    text-align: left;
+    padding: 1em 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
