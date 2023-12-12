@@ -1,16 +1,105 @@
 body {
       font-family: Verdana, sans-serif;
+      background-image: url('smooth-white-stucco-wall.jpg');
+      background-repeat: repeat;
+      background-size: cover; /* or 'contain' based on your preference */
   }
 
+ 
 nav {
-    background-color: #becbb4;
+    /* background-color: #becbb4; */
     text-align: left;
     padding: 1em 0;
+    margin: 0px 0px;
+    
 }
+  
+  nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px; /* Example font size */
+  }
+  
+  /* Styling the main header */
+  h1 {
+      color: #5b6256;
+      text-align: justify; /* This will align your text to justify */
+      margin: 20px 140px; /* Adds margin around the paragraph */
+      font-size: 36px; /* Large font size for the main header */
+  }
+  
+  /* Styling the sub-header */
+  h2 {
+      color: #8d9983;
+      text-align: justify; /* This will align your text to justify */
+      margin: 20px 140px; /* Adds margin around the paragraph */
+      font-size: 30px; /* Smaller font size for the sub-header */
+  }
+  
+  /* Styling the paragraph */
+  p {
+      color: #666;
+      text-align: justify; /* This will align your text to justify */
+      margin: 20px 140px; /* Adds margin around the paragraph */
+  }
+  
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-}
+  #typingAnimation {
+      border-right: 2px solid; /* Simulates the cursor */
+      font-family: monospace; /* Gives it a 'coding' look */
+      margin: 60px 140px; /* Adds margin around the paragraph */
+      font-size: 80px;
+      white-space: nowrap; /* Keeps the text on one line */
+      overflow: hidden; /* Keeps the text from overflowing the container */
+      animation: typing 4s steps(30, end), blink .75s step-end infinite;
+      /* Adjust the duration and steps based on your text length and desired speed */
+      color: #283618;
+  }
+  
+  /* Typing animation */
+  @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+  }
+  
+  /* Cursor blink animation */
+  @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #283618; }
+  }
+  
 
+  .inspo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 15px;
+      padding: 20px;
+  }
+  
+  .inspo-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; /* Optional: for rounded corners */
+  }
+  
+
+  .image-hover-effect {
+      transition: transform 0.3s ease, filter 0.3s ease;
+      will-change: transform, filter; /* Optimizes the rendering */
+  }
+  
+  .image-hover-effect:hover {
+      transform: scale(1.05); /* Slightly increases the size */
+      filter: brightness(1.1); /* Slightly increases the brightness */
+  }
+  
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  
+  .element {
+      animation: fadeIn 2s ease-in-out;
+  }
+  
